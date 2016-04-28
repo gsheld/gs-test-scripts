@@ -6,6 +6,10 @@
  * FINDINGS: 
  *    Multiple calls to [NSLayoutConstraint addConstraints:] does NOT lead to a duplication of NSLayoutConstraint instances
  *    associated with their respective views.
+ *
+ * Version: Apple Swift version 2.2 (swiftlang-703.0.18.5 clang-703.0.31)
+ * Date:    4-28-2016
+ * Author:  Grant Sheldon
  */
 
 import UIKit

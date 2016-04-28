@@ -1,8 +1,8 @@
-# pl-test-scripts
-Test scripts to elucidate the behavior of various programming languages.
+# gs-test-scripts
+Test scripts to elucidate the behavior of various programming languages, libraries and frameworks.
 
 ### Motivation
-1. Create a central repository for all of my programming-language related test-scripts so I never have to ask the same question twice.
+1. Create a central repository for all of my test-scripts so I never have to ask the same question twice.
 2. Bootstrap the creation of new test-scripts to reduce the amount of time I have to spend digging through documentation or writing these from scratch.
 
 ### Organization

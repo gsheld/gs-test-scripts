@@ -38,19 +38,19 @@ class MyContainerClass {
   }
 }
 
-// We expect MyClass dealloc to pe printed twice for this function and MyParentClass dealloc to be printed once
+// We expect MyClass dealloc to pe printed twice for this function and MyContainerClass dealloc to be printed once
 func test() {
   let a = MyContainerClass()
   print(a.viewsDict)
 }
 
-// We expect MyClass dealloc to pe printed twice for this function and MyParentClass dealloc to be printed once
+// We expect MyClass dealloc to pe printed twice for this function and MyContainerClass dealloc to be printed once
 func testWithoutAccessingViewsDict() {
   let a = MyContainerClass()
   print(a)
 }
 
-// If [unowned self] is not needed, MyClass dealloc should be printed 4 times total, MyParentClass dealloc
+// If [unowned self] is not needed, MyClass dealloc should be printed 4 times total, MyContainerClass dealloc
 // should be printed twice total. If [unowned self] is needed, no deallocs will be printed due to retain cycle.
 test()
 testWithoutAccessingViewsDict()

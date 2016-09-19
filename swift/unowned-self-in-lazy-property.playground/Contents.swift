@@ -1,5 +1,3 @@
-/// This playground checks to make sure that you don't need to do [unowned self] in a lazy var
-/// closure that doesn't retain self.
 /**
  * GOAL:
  *    To check to make sure that you don't need to do [unowned self] in a lazy var closure that doesn't retain self.

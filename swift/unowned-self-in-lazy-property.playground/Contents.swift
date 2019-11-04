@@ -6,9 +6,10 @@
  *    You don't need to use [unowned self] in a lazy var closure that doesn't retain self directly (i.e. only uses
  *    self.property1, self.property2, etc.
  *
- * Version: Apple Swift version 2.2 (swiftlang-703.0.18.5 clang-703.0.31)
- * Date:    5-11-2016
- * Author:  Noah Gilmore
+ * Version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+ * Updated Date: 11-04-2019
+ * Created Date: 5-11-2016
+ * Author: Noah Gilmore
  */
 
 import Foundation

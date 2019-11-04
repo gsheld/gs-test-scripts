@@ -7,8 +7,9 @@
  *    Multiple calls to NSLayoutConstraint.activateConstraints() does NOT lead to a duplication of NSLayoutConstraint instances
  *    associated with their respective views.
  *
- * Version: Apple Swift version 2.2 (swiftlang-703.0.18.5 clang-703.0.31)
- * Date:    4-28-2016
+ * Version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+ * Updated Date: 11-04-2019
+ * Created Date:    4-28-2016
  * Author:  Grant Sheldon
  */
 
@@ -22,11 +23,11 @@ bView.addSubview(aView)
 aView.translatesAutoresizingMaskIntoConstraints = false
 bView.translatesAutoresizingMaskIntoConstraints = false
 
-let constraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[aView]|", options: [], metrics: nil, views: views)
+let constraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[aView]|", options: [], metrics: nil, views: views)
 
 // NOTE: Rm'ing both of these 2 calls has the expected effect of dropping the constraint count on `bView` to 0.
-NSLayoutConstraint.activateConstraints(constraints)
-NSLayoutConstraint.activateConstraints(constraints) // Does NOT duplicate constraints
+NSLayoutConstraint.activate(constraints)
+NSLayoutConstraint.activate(constraints) // Does NOT duplicate constraints
 
 /*
  * Prints 2 constraints corresponding to the visual formatting string activated above. Specifically:
